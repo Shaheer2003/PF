@@ -1,13 +1,14 @@
-#include <stdio.h>
+#include<stdio.h>
 main(){
-	float rate,salary,tax,net;
-	printf("Enter tax rate: ");
-	scanf("%f",&rate);
-	printf("Enter Salary: ");
-	scanf("%f",&salary);
-	tax=salary*rate/100;
-	net=salary-tax;
-	printf("The Tax is: %f",tax);
-	printf("\nYour Net Salary is: %f",net);
+	int totaldays,years,mod,weeks,days;
+	puts("Enter number of days");
+	scanf("%d",&totaldays);
+	years = totaldays/365;
+	mod = totaldays%365;
+	weeks = mod/7;
+	days=mod%7;
+	printf("%d Years,",years);
+	printf("%d Weeks, ",weeks);
+	printf("%d Days",days);
+	
 }
-
